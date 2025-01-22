@@ -8,7 +8,7 @@ from selene.support.conditions import have, be
 
 
 
-@allure.story('Reg Page')
+@allure.story('Registration Page')
 @allure.title('Заполнение формы')
 def test_successful(setup_browser):
     browser = setup_browser
