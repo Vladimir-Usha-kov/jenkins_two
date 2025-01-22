@@ -1,16 +1,18 @@
 import os.path
+from typing import Any
 
 import allure
 from selene import browser, command
 from selene.support.conditions import have, be
 
-from utils import attach
+
 
 
 @allure.story('Reg Page')
 @allure.title('Заполнение формы')
-def test_student_registration_form():
-    # browser = setup_browser
+def test_successful(setup_browser):
+    browser = setup_browser
+
     with allure.step('Открытие браузера'):
         browser.open('https://demoqa.com/automation-practice-form')
 
@@ -52,6 +54,3 @@ def test_student_registration_form():
             'Haryana Karnal'
         ))
 
-        attach.add_html(browser)
-        attach.add_screenshot(browser)
-        attach.add_logs(browser)
