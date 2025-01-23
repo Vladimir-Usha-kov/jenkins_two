@@ -53,3 +53,9 @@ def test_successful(setup_browser):
             'street test 12',
             'Haryana Karnal'
         ))
+
+def test_filed1():
+    assert False
+
+def test_filed2():
+    assert False
