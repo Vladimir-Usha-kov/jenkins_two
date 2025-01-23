@@ -53,28 +53,3 @@ def test_successful(setup_browser):
             'street test 12',
             'Haryana Karnal'
         ))
-
-
-def test_pass1():
-    pass
-
-def test_pass2():
-    pass
-
-
-
-def test_filed1():
-    assert False
-
-def test_failed2():
-    assert False
-
-
-
-@pytest.mark.skip
-def test_skipped1():
-    pass
-
-@pytest.mark.skip
-def test_skipped2():
-    pass
