@@ -1,6 +1,6 @@
 import os.path
 from typing import Any
-
+import pytest
 import allure
 from selene import browser, command
 from selene.support.conditions import have, be
@@ -54,3 +54,27 @@ def test_successful(setup_browser):
             'Haryana Karnal'
         ))
 
+
+def test_pass1():
+    pass
+
+def test_pass2():
+    pass
+
+
+
+def test_filed1():
+    assert False
+
+def test_failed2():
+    assert False
+
+
+
+@pytest.mark.skip
+def test_skipped1():
+    pass
+
+@pytest.mark.skip
+def test_skipped2():
+    pass
